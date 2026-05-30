@@ -457,9 +457,6 @@ plot_lowvol <- ggplot(plot_data_lowvol, aes(x = Portfolio_Typ, y = Exp_LowVol, f
 print(plot_lowvol)
 ggsave("data/Plot_Factor_LowVol.png", plot = plot_lowvol, width = 9, height = 10, dpi = 300)
 
-
-
-
 # =========================================================================
 # 7. EFFIZIENZGRENZEN (NUR PORTFOLIOS, OHNE EINZELAKTIEN)
 # =========================================================================
