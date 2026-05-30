@@ -513,19 +513,3 @@ df_expected_returns <- bind_rows(
 )
 
 write_csv2(df_expected_returns, "data/Portfolio_ExpectedReturns_Master.csv")
-
-# =========================================================================
-# Topaktien e(r) und vol Ausgabe (für Tabelle)
-# =========================================================================
-
-tabelle_top_aktien <- plot_data_einzelaktien %>%
-  select(Jahr, Aktie, Rendite_Prozent, Vola_Prozent) %>%
-  mutate(
-    Rendite_Prozent = paste0(format(round(Rendite_Prozent, 2), nsmall = 2, decimal.mark = ","), " %"),
-    Vola_Prozent = paste0(format(round(Vola_Prozent, 2), nsmall = 2, decimal.mark = ","), " %")
-  )
-
-cat("\n--- DATEN FÜR DEINE WORD-TABELLE (MAX-RETURN AKTIEN) ---\n")
-print(tabelle_top_aktien)
-
-
