@@ -1,4 +1,4 @@
-# libraries ladens
+# libraries laden
 library(tidyverse)  # Beinhaltet ggplot2 (Plotting), dplyr (Datenmanipulation), readr (CSV-Import)
 library(scales)     # für bessere Achsenbeschriftungen
 library(ggrepel)    # Text und Plots separat darstellen (keine visuelle Überschneidung)
